@@ -1,0 +1,68 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  font-weight: bold;
+  text-align: center;
+}
+#game-container{
+  display: inline-block;
+  margin: 0 auto;
+  background: #000;
+  border: 1px solid #000;
+  border-radius:6px;
+  padding: 10px;
+  border-radius: 18px;
+  font-family: 'Fascinate', cursive;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  list-style: none;
+}
+h1{
+  color:#fff;
+  margin-top:0;
+} 
+p{
+  color:#fff;
+  font-size: 20px;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  grid-template-rows: repeat(3, 140px);
+  gap: 10px;
+  margin: 20px 0 0;
+  background: #000;
+  border-radius:6px;
+}
+#board li {
+  border-radius: 6px;
+  /* border: 3px solid #000000; */
+  cursor: pointer;
+  background: #fff;
+  transition:  0.8s;
+}
+#board li:hover{
+  background: #ccc;
+}
+#board li.x{
+   background-image: url('https://previews.123rf.com/images/mironovkonstantin/mironovkonstantin2002/mironovkonstantin200200001/139471614-dirty-grunge-hand-drawn-with-brush-strokes-cross-x-vector-illustration-isolated-on-white-background-.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;  
+    background-size:cover;
+    user-select: none;
+    
+}
+#board li.o{
+   background-image: url('https://image.shutterstock.com/image-illustration/o-red-handwritten-letters-over-260nw-126743951.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;  
+    background-size:cover;
+    user-select: none;
+}
